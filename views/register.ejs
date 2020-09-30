@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='/assets/style.css' rel='stylesheet'>
+        <title>
+            Register Page
+        </title>
+       
+        <style>
+            form{
+                width: 90%;
+                padding: 40px 40px;
+            }
+        </style>
+       
+    </head>
+    <body>
+      
+        <div class='form-div'>
+        <form  onsubmit="return check()" method="POST" action='login'>
+            <h2> Register </h2>
+            <input type="text" name ='fname' placeholder="Enter Full Name" id='fname' required>
+            <input type="email" name='email' placeholder="Enter Email" id='gmail' required>
+            <input type="text" name='user' placeholder="Enter Username" id='user' required>
+            <input type="password" name='pass' placeholder="Enter Password" id='pass' required>
+            <input type="password" name='rpass' placeholder="Re-Enter Password" id='rpass' required>
+            
+            <!-- <input type="text" > -->
+            <button type='submit'>Submit</button>
+            <span class="already"> Already registered?  <a href='login'>Go to login page</a> </span>
+        </form>
+    </div>
+    <script  src='/assets/register.js'></script> 
+    </body>
+    
+</html>

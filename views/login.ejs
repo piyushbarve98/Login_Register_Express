@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='/assets/style.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>
+            Login Page
+        </title>
+        <script defer src='/assets/login.js'></script>
+    </head>
+    <body>
+      
+        <div class='form-div'>
+        <form  onsubmit="return check()" method="POST" action="success">
+            <h2> Login </h2>
+            <input type="text" name='user' placeholder="Enter Username" id='user' required>
+            <input type="password" name='pass' placeholder="Enter Password" id='pass' required>
+            <!-- <input type="email" placeholder="Enter Email" id='gmail' required> -->
+            <!-- <input type="text" > -->
+            <button type='submit'>Submit</button>
+        </form>
+    </div>
+       
+    </body>
+</html>
